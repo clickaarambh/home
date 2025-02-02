@@ -37,3 +37,18 @@ function navAnimation() {
 }
 
 navAnimation()
+
+var pageCenter = document.querySelector(".page2-center")
+var video = document.querySelector("#page2 video")
+
+page2Center.addEventListener("click",function(){
+    video.play()
+    gsap.to(video,{
+        transform:"scaleX(1) scaleY(1)",
+        opacity:1,
+        borderRadius:0
+    })
+})
+video.addEventListener("click",function(){
+    
+})
