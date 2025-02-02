@@ -48,6 +48,7 @@ nav button{
     font-size: 0.85vw;
     text-transform: uppercase;
     font-weight: 700;
+    cursor: pointer;
 }
 
 nav button svg{
@@ -82,6 +83,7 @@ nav button svg{
     font-weight: 400;
     display: inline-block;
     transform: translateY(25px);
+    cursor: pointer;
 }
 
 #nav-bottom{
@@ -92,6 +94,7 @@ nav button svg{
     z-index: 9;
     border-bottom: 1px solid var(--text-clr);
     background-color: var(--darkbg-clr);
+    cursor: pointer;
 }
 
 #page1 {
@@ -158,7 +161,6 @@ nav button svg{
 }
 
 #moving-div{
-    /* background-color: red; */
     margin-top: 10vh;
     position: absolute;
     bottom: 3%;
@@ -213,4 +215,10 @@ nav button svg{
 #page2 {
     height: 100vh;
     width: 100%;
+    background-color: var(--darkbg-clr);
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: relative;
+    background-image: url(Click\ Aarambh\ imag);
 }
