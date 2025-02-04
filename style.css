@@ -38,6 +38,10 @@ nav {
     z-index: 10;
 }
 
+nav #logo {
+    cursor: pointer;
+}
+
 nav button {
     background-color: var(--richblack-clr);
     display: flex;
@@ -56,7 +60,7 @@ nav button svg {
     margin-left: 1.6vw;
 }
 
-.nav-part2 {
+/* .nav-part2 {
     display: flex;
     gap: 2vw;
     align-items: flex-start;
@@ -84,7 +88,7 @@ nav button svg {
     display: inline-block;
     transform: translateY(25px);
     cursor: pointer;
-}
+} */
 
 #nav-bottom {
     width: 79%;
@@ -148,7 +152,7 @@ nav button svg {
     text-transform: lowercase;
     padding: 5px 12px;
     border: 1px solid var(--primary-clr);
-    border-radius: 50px;
+    border-radius: 7px;
     margin: 5px 5px;
     margin-top: 0.5vw;
 }
@@ -288,4 +292,163 @@ nav button svg {
     border-radius: 15px;
     opacity: 0;
     z-index: 9999;
+}
+
+#page2mob {
+    display: none;
+}
+
+@media (min-width: 320px) and (max-width: 1080px) {
+    /* body {
+        grid-template-columns: 1fr;
+    } */
+
+    nav {
+        width: 100%;
+        height: 10vh;
+        flex-wrap: wrap-reverse;
+        align-content: center;
+        justify-items: center;
+        padding: 3px 0px;
+    }
+
+    nav #logo {
+        margin-left: 16px;
+    }
+
+    nav button {
+        width: 36%;
+        height: 44px;
+        border-radius: 7px;
+        font-size: 3.8vw;
+        font-weight: 700;
+        cursor: pointer;
+        padding: 0px 0px 0px 14px;
+        margin-right: 16px;
+        margin-bottom: 7px;
+    }
+
+    nav button svg {
+        height: 3.8vw;
+    }
+
+    #nav-bottom {
+        width: 100%;
+        height: 0vh;
+        border-bottom: 1px solid var(--text-clr);
+        background-color: var(--darkbg-clr);
+    }
+
+    #page1 h1 {
+        font-size: 6.5vw;
+        line-height: 3.5vh;
+    }
+
+    #page1 h1 svg {
+        height: 5.5vw;
+        width: 5.5vw;
+        padding: 4px;
+    }
+
+    #page1 h2 {
+        font-size: 2.5vw;
+        line-height: 3vh;
+    }
+
+    #page1 p {
+        font-size: 4.3vw;
+        width: 85%;
+    }
+
+    #page1-services {
+        flex-direction: column;
+    }
+    
+    #page1-services h4 {
+        font-weight: 400;
+        font-size: 4vw;
+        text-transform: lowercase;
+        padding: 5px 12px;
+        border: 1px solid var(--primary-clr);
+        border-radius: 7px;
+        margin: 5px 5px;
+        margin-top: 1vw;
+    }
+
+    #moving-div {
+        width: 100%;
+    }
+
+    #moving-div .move img {
+        height: 12vh;
+    }
+
+    #page2 {
+        display: none;
+    }
+
+    #page2mob {
+        height: 100%;
+        width: 100%;
+        background-color: var(--darkbg-clr);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    #page2mob .portfolio {
+        border-radius: 15px;
+        height: 100vh;
+        width: 100%;
+        background-image: url(Mobile\ bg.png);
+        background-size: cover;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    #page2mob .portfolio .page2mob-center .icon {
+        background-color: var(--text-clr);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 80px;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+
+    #page2mob .portfolio .page2mob-center .icon i {
+        color: var(--richblack-clr);
+        font-size: 10vw;
+        cursor: pointer;
+    }
+
+    #page2mob .portfolio .page2mob-center h5 {
+        font-size: 4.5vw;
+        font-weight: 700;
+        padding: 10px 16px 10px 16px;
+        background-color: var(--text-clr);
+        color: var(--richblack-clr);
+        border-radius: 85px;
+        margin-top: 1vw;
+        opacity: 1;
+        transition: all ease 0.5s;
+        text-transform: uppercase;
+        transform: translateY(16%);
+        cursor: pointer;
+    }
+
+    #page2mob .portfolio video {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        object-fit: fill;
+        transform: scaleX(0.7) scaleY(0);
+        border-radius: 15px;
+        opacity: 0;
+        z-index: 9999;
+    }
 }

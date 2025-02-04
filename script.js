@@ -58,6 +58,30 @@ video.addEventListener("click",function(){
 })
 }
 
+function page2mobAnimation(){
+    var page2mobCenter = document.querySelector(".page2mob-center")
+var video = document.querySelector("#page2mob video")
+
+page2mobCenter.addEventListener("click",function(){
+    video.play()
+    gsap.to(video,{
+        transform:"scaleX(1) scaleY(1)",
+        opacity:1,
+        borderRadius:0
+    })
+})
+video.addEventListener("click",function(){
+    video.pause()
+    gsap.to(video,{
+        transform:"scaleX(0.7) scaleY(0)",
+        opacity:0,
+        borderRadius:"35px"
+    })
+})
+}
+
 // navAnimation()
 
 page2Animation()
+
+page2mobAnimation()
