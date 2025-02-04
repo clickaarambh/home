@@ -36,9 +36,8 @@ function navAnimation() {
     })
 }
 
-navAnimation()
-
-var pageCenter = document.querySelector(".page2-center")
+function page2Animation(){
+    var page2Center = document.querySelector(".page2-center")
 var video = document.querySelector("#page2 video")
 
 page2Center.addEventListener("click",function(){
@@ -50,5 +49,15 @@ page2Center.addEventListener("click",function(){
     })
 })
 video.addEventListener("click",function(){
-    
+    video.pause()
+    gsap.to(video,{
+        transform:"scaleX(0.7) scaleY(0)",
+        opacity:0,
+        borderRadius:"35px"
+    })
 })
+}
+
+navAnimation()
+
+page2Animation()
