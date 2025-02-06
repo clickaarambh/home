@@ -318,7 +318,7 @@ nav button svg {
 }
 
 .join-section h3 {
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 27px;
 }
@@ -339,6 +339,11 @@ nav button svg {
     border-radius: 15px 15px 0px 35px;
 }
 
+.launch img{
+    height: 60vh;
+    margin-top: 5vh;
+}
+
 .team {
     height: 100%;
     width: 31%;
@@ -349,6 +354,11 @@ nav button svg {
     border-radius: 15px 15px 0px 35px;
 }
 
+.team img{
+    height: 50vh;
+    margin-top: 10vh;
+}
+
 .discover {
     height: 100%;
     width: 31%;
@@ -356,7 +366,12 @@ nav button svg {
     border: 1px solid var(--primary-clr);
     border: 1px solid var();
     padding: 1.5vw;
-        border-radius: 15px 15px 0px 35px;
+    border-radius: 15px 15px 0px 35px;
+}
+
+.discover img{
+    height: 48vh;
+    margin-top: 7vh;
 }
 
 @media (min-width: 320px) and (max-width: 1080px) {
@@ -535,40 +550,55 @@ nav button svg {
     }
 
     .join-section h3 {
-        font-size: 19px;
+        font-size: 18px;
         font-weight: 400;
         line-height: 27px;
     }
 
     .join-section p {
         margin-top: 2vh;
-        font-size: 17px;
+        font-size: 16px;
         line-height: 18px;
     }
 
     .launch {
         min-height: 70%;
         width: 84vw;
-            background-color: var(--richblack-clr);
-    border: 1px solid var(--primary-clr);
+        background-color: var(--richblack-clr);
+        border: 1px solid var(--primary-clr);
         margin-bottom: 5vh;
         padding: 3vw;
     }
+
+    .launch img{
+    height: 40vh;
+    margin-top: 1.5vh;
+}
 
     .team {
         min-height: 70%;
         width: 84vw;
-            background-color: var(--richblack-clr);
-    border: 1px solid var(--primary-clr);
+        background-color: var(--richblack-clr);
+        border: 1px solid var(--primary-clr);
         margin-bottom: 5vh;
         padding: 3vw;
     }
 
+    .team img{
+    height: 40vh;
+    margin-top: 5vh;
+}
+
     .discover {
         min-height: 70%;
         width: 84vw;
-            background-color: var(--richblack-clr);
-    border: 1px solid var(--primary-clr);
+        background-color: var(--richblack-clr);
+        border: 1px solid var(--primary-clr);
         padding: 3vw;
     }
+
+    .discover img{
+    height: 38vh;
+    margin-top: 1.5vh;
+}
 }
