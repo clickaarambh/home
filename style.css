@@ -374,10 +374,82 @@ nav button svg {
     margin-top: 7vh;
 }
 
+#page4 {
+    height: 100%;
+    width: 100%;
+    margin-top: 0%;
+}
+
+.service-section {
+    width: 100%;
+    height: 100vh;
+    margin-top: 0%;
+}
+
+.service-box1 {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 35vh;
+    padding-right: 35vh;
+}
+
+.our-service{
+    height: 30vh;
+    width: 30%;
+    padding: 2vh;
+}
+
+.our-service h1{
+    font-size: 58px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.service-cont{
+    height: 30vh;
+    width: 60%;
+    padding: 2vh;
+}
+
+.service-cont p{
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 300;
+}
+
+.service-box2 {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1f2c7f;
+    padding-left: 27vh;
+    padding-right: 27vh;
+    position: relative;
+}
+
+.Creative-strategy{
+    height: 40vh;
+    width: 50%;
+    background-color: #82c21d;
+}
+
+.creative{
+    height: 100%;
+    width: 45%;
+    background-color: red;
+}
+
+/* .creative img{
+    height: 100%;
+    width: 100%;
+} */
+
 @media (min-width: 320px) and (max-width: 1080px) {
-    /* body {
-        grid-template-columns: 1fr;
-    } */
 
     nav {
         width: 100%;
