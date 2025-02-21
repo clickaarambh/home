@@ -339,7 +339,7 @@ nav button svg {
     border-radius: 15px 15px 0px 35px;
 }
 
-.launch img{
+.launch img {
     height: 60vh;
     margin-top: 5vh;
 }
@@ -354,7 +354,7 @@ nav button svg {
     border-radius: 15px 15px 0px 35px;
 }
 
-.team img{
+.team img {
     height: 50vh;
     margin-top: 10vh;
 }
@@ -369,85 +369,11 @@ nav button svg {
     border-radius: 15px 15px 0px 35px;
 }
 
-.discover img{
+.discover img {
     height: 48vh;
     margin-top: 7vh;
 }
 
-#page4 {
-    height: 100%;
-    width: 100%;
-    margin-top: 0%;
-}
-
-.service-section {
-    width: 100%;
-    height: 100vh;
-    margin-top: 0%;
-}
-
-.service-box1 {
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 35vh;
-    padding-right: 35vh;
-}
-
-.our-service{
-    height: 30vh;
-    width: 30%;
-    padding: 2vh;
-}
-
-.our-service h1{
-    font-size: 58px;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.service-cont{
-    height: 30vh;
-    width: 60%;
-    padding: 2vh;
-}
-
-.service-cont p{
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 300;
-}
-
-.service-box2 {
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #1f2c7f;
-    padding-left: 27vh;
-    padding-right: 27vh;
-    position: relative;
-}
-
-.Creative-strategy{
-    height: 40vh;
-    width: 50%;
-    background-color: #82c21d;
-}
-
-.service-box2 .creative{
-    height: 100%;
-    width: 45%;
-    background-color: red;
-}
-
-/* .creative img{
-    height: 100%;
-    width: 100%;
-} */
 
 @media (min-width: 320px) and (max-width: 1080px) {
 
@@ -616,6 +542,8 @@ nav button svg {
     }
 
     .join-section {
+        height: 100%;
+        width: 100%;
         flex-direction: column;
         padding: 10vh 0vh;
         justify-items: space-between;
@@ -642,10 +570,10 @@ nav button svg {
         padding: 3vw;
     }
 
-    .launch img{
-    height: 40vh;
-    margin-top: 1.5vh;
-}
+    .launch img {
+        height: 40vh;
+        margin-top: 1.5vh;
+    }
 
     .team {
         min-height: 70%;
@@ -656,10 +584,10 @@ nav button svg {
         padding: 3vw;
     }
 
-    .team img{
-    height: 40vh;
-    margin-top: 5vh;
-}
+    .team img {
+        height: 40vh;
+        margin-top: 5vh;
+    }
 
     .discover {
         min-height: 70%;
@@ -669,8 +597,9 @@ nav button svg {
         padding: 3vw;
     }
 
-    .discover img{
-    height: 38vh;
-    margin-top: 1.5vh;
-}
+    .discover img {
+        height: 38vh;
+        margin-top: 1.5vh;
+    }
+
 }
