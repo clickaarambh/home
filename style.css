@@ -407,7 +407,7 @@ nav button svg {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0vh 1vh;
+    padding: 0vh 23vh;
 
     p{
         font-size: 17px;
@@ -661,6 +661,11 @@ nav button svg {
         .botmfor{
             height: 20vh;
             width: 100%;
+            padding: 0vh 2.8vh;
+
+            p{
+                text-align: left;
+            }
         }
     }
 
