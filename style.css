@@ -374,6 +374,50 @@ nav button svg {
     margin-top: 7vh;
 }
 
+#page4 {
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid var(--darktext-clr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 1vh 23vh;
+}
+
+.topfor{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+        font-size: 48px;
+        line-height: 27px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+.botmfor{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0vh 1vh;
+
+    p{
+        font-size: 17px;
+        line-height: 27px;
+        font-weight: 300;
+        text-align: center;
+
+    }
+}
+
 
 @media (min-width: 320px) and (max-width: 1080px) {
 
@@ -600,6 +644,24 @@ nav button svg {
     .discover img {
         height: 38vh;
         margin-top: 1.5vh;
+    }
+
+    #page4 {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        position: relative;
+        padding: 1vh 0vh;
+
+        .topfor{
+            height: 7vh;
+            width: 100%;
+        }
+        
+        .botmfor{
+            height: 20vh;
+            width: 100%;
+        }
     }
 
 }
