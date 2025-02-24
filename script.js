@@ -36,48 +36,57 @@ function navAnimation() {
     })
 }
 
-function page2Animation(){
+function page2Animation() {
     var page2Center = document.querySelector(".page2-center")
-var video = document.querySelector("#page2 video")
+    var video = document.querySelector("#page2 video")
 
-page2Center.addEventListener("click",function(){
-    video.play()
-    gsap.to(video,{
-        transform:"scaleX(1) scaleY(1)",
-        opacity:1,
-        borderRadius:0
+    page2Center.addEventListener("click", function () {
+        video.play()
+        gsap.to(video, {
+            transform: "scaleX(1) scaleY(1)",
+            opacity: 1,
+            borderRadius: 0
+        })
     })
-})
-video.addEventListener("click",function(){
-    video.pause()
-    gsap.to(video,{
-        transform:"scaleX(0.7) scaleY(0)",
-        opacity:0,
-        borderRadius:"35px"
+    video.addEventListener("click", function () {
+        video.pause()
+        gsap.to(video, {
+            transform: "scaleX(0.7) scaleY(0)",
+            opacity: 0,
+            borderRadius: "35px"
+        })
     })
-})
 }
 
-function page2mobAnimation(){
+function page2mobAnimation() {
     var page2mobCenter = document.querySelector(".page2mob-center")
-var video = document.querySelector("#page2mob video")
+    var video = document.querySelector("#page2mob video")
 
-page2mobCenter.addEventListener("click",function(){
-    video.play()
-    gsap.to(video,{
-        transform:"scaleX(1) scaleY(1)",
-        opacity:1,
-        borderRadius:0
+    page2mobCenter.addEventListener("click", function () {
+        video.play()
+        gsap.to(video, {
+            transform: "scaleX(1) scaleY(1)",
+            opacity: 1,
+            borderRadius: 0
+        })
     })
-})
-video.addEventListener("click",function(){
-    video.pause()
-    gsap.to(video,{
-        transform:"scaleX(0.7) scaleY(0)",
-        opacity:0,
-        borderRadius:"35px"
+    video.addEventListener("click", function () {
+        video.pause()
+        gsap.to(video, {
+            transform: "scaleX(0.7) scaleY(0)",
+            opacity: 0,
+            borderRadius: "35px"
+        })
     })
-})
+}
+
+function page6Animation() {
+    var swiper = new Swiper(".mySwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
 }
 
 // navAnimation()
@@ -85,3 +94,5 @@ video.addEventListener("click",function(){
 page2Animation()
 
 page2mobAnimation()
+
+page6Animation()
