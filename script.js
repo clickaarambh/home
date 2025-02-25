@@ -1,3 +1,14 @@
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('[data-scroll-container]'),
+//     smooth: true
+// });
+
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('#moving-div'),
+//     smooth: true
+// });
+
+
 function navAnimation() {
     var nav = document.querySelector("nav")
 
@@ -89,6 +100,22 @@ function page6Animation() {
     });
 }
 
+function page7Animation() {
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwS0cqL7v77sUzgA8MwKSLVjQkDQNpQIqKc1vWh20en26sBix5MXSiFNymoP37TR3DzRw/exec'
+
+    const form = document.forms['clickaarambh_form']
+
+form.addEventListener('submit', e => {
+  
+  e.preventDefault()
+  
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! Form is submitted" ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
+}
+
 // navAnimation()
 
 page2Animation()
@@ -96,3 +123,5 @@ page2Animation()
 page2mobAnimation()
 
 page6Animation()
+
+page7Animation()

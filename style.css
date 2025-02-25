@@ -217,6 +217,7 @@ nav button .flex {
     white-space: nowrap;
     padding: 0.5vw;
     overflow: hidden;
+    /* z-index: 1; */
 }
 
 #moving-div .move {
@@ -728,6 +729,183 @@ nav button .flex {
     background-color: var(--secondary-clr);
 }
 
+#page7{
+    margin-top: 8vh;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    padding: 1vh 40vh;
+}
+
+.fom{
+    height: 100%;
+    width: 100%;
+}
+
+input:focus,
+textarea:focus {
+    outline: 0;
+}
+
+.form-head{
+    height: 20vh;
+    width: 100%;
+    padding: 1vh 10vh;
+
+    h1{
+        font-size: 42px;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-family: "Montserrat", serif, "Commissioner", serif;
+        margin-bottom: 1vh;
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+        font-family: "Montserrat", serif, "Commissioner", serif;
+    }
+}
+
+.input-sec{
+    height: 68vh;
+    width: 100%;
+    padding: 1vh 10vh;
+}
+
+.input-sec .fom-nam {
+    width: 100%;
+    height: 8vh;
+    margin-bottom: 5vh;
+}
+
+.input-sec .fom-nam input {
+    width: 100%;
+    height: 8vh;
+    border-radius: 7px;
+    padding: 2vh 2vh;
+    font-size: 16px;
+    border: none;
+    background-color: var(--text-clr);
+    color: var(--richblack-clr);
+    font-family: "Montserrat", serif, "Commissioner", serif;
+}
+
+.input-sec .fom-mid {
+    width: 100%;
+    height: 8vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fom-mid .fom-mbox input {
+    width: 350px;
+    height: 8vh;
+    border-radius: 7px;
+    padding: 2vh 2vh;
+    font-size: 16px;
+    border: none;
+    background-color: var(--text-clr);
+    color: var(--richblack-clr);
+    font-family: "Montserrat", serif, "Commissioner", serif;
+}
+
+.fom-mid .fom-nbox input {
+    width: 350px;
+    height: 8vh;
+    border-radius: 7px;
+    padding: 2vh 2vh;
+    font-size: 16px;
+    border: none;
+    background-color: var(--text-clr);
+    color: var(--richblack-clr);
+    font-family: "Montserrat", serif, "Commissioner", serif;
+}
+
+.input-sec textarea {
+    max-height: 24vh;
+    padding: 2vh 2vh;
+    border: 0;
+    width: 100%;
+    font-size: 16px;
+    background-color: white;
+    color: var(--darktext-clr);
+    border-radius: 7px;
+    font-family: "Montserrat", serif, "Commissioner", serif;
+}
+
+.input-sec .fom-smit {
+    margin-top: 5vh;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: end;
+}
+
+.input-sec .fom-smit input {
+    padding: 12px 45px 10px 45px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    font-family: "Montserrat", serif, "Commissioner", serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    background: linear-gradient(90deg, #82c21d, #2f460a, #82c21d);
+    border-radius: 7px;
+    color: #f4f6f5;
+    transition: all 0.3s ease;
+    box-shadow:
+        inset 0px 0px 5px #ffffffa9,
+        inset 0px 35px 30px #041110,
+        0px 5px 10px #0a2e2b;
+    text-shadow: 1px 1px 1px #041110;
+}
+
+.input-sec .fom-smit input::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 7px;
+    filter: blur(0);
+    z-index: -1;
+    box-shadow: none;
+    background: conic-gradient(#041110 80deg,
+            #9dff00,
+            #ffffff,
+            #9dff00,
+            #041110 280deg);
+    transition: all 0.3s ease;
+}
+
+.input-sec .fom-smit input:hover::before {
+    filter: blur(15px);
+}
+
+.input-sec .fom-smit input:active::before {
+    filter: blur(5px);
+    transform: translateY(1px);
+}
+
+.input-sec .fom-smit input:active {
+    box-shadow:
+        inset 0px 0px 5px #ffffffa9,
+        inset 0px 35px 30px #041110;
+    margin-top: 3px;
+}
+
+#page8 {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    padding: 1vh 23vh;
+}
+
 @media (min-width: 320px) and (max-width: 1080px) {
 
     nav {
@@ -1135,6 +1313,70 @@ nav button .flex {
             }
         }
 
+    }
+
+    #page7{
+        height: 100vh;
+        width: 100%;
+        padding: 2vh 1vh;
+        margin-top: 5vh;
+    }
+
+    .form-head{
+        height: 24vh;
+        width: 100%;
+        padding: 1vh 2vh;
+
+        h1{
+            font-size: 32px;
+            text-transform: capitalize;
+            font-weight: 600;
+            margin-bottom: 0.5vh;
+        }
+    
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21px;
+        }
+    }
+
+    .input-sec{
+        height: 72vh;
+        width: 100%;
+        padding: 1vh 2vh;
+    }
+
+    .input-sec .fom-nam{
+        margin-bottom: 0vh;
+    }
+
+    .input-sec .fom-mid {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        margin-bottom: 10vh;
+        margin-top: 2vh;
+    }
+
+    .fom-mid .fom-mbox input {
+        width: 100%;
+    }
+
+    .fom-mid .fom-nbox input {
+        width: 100%;
+    }
+
+    .input-sec textarea {
+        max-height: 30vh;
+        margin-top: 0vh;
+        margin-bottom: 3vh;
+    }
+
+    .input-sec .fom-smit {
+        margin-top: 0vh;
     }
 
 }

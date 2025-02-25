@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>clickaarambh</title>
+  <link rel="icon" type="image/svg" href="./favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
@@ -12,7 +14,7 @@
 
 <body>
   <nav>
-    <div id="logo">
+    <div id="logo" onclick="location.href='index.html'">
       <img src="Click Aarambh image/click aarambh logo.png" height="50px" alt="logo">
     </div>
     <div class="nav-part2">
@@ -33,7 +35,7 @@
       </div> -->
     </div>
     <button>
-      <div class="outer-cont flex" onclick="location.href='https://github.com/clickaarambh'" target="_blank">
+      <div class="outer-cont flex" onclick="location.href='#page7'" target="_blank">
         Let's Dive-In
       <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
         fill="#f4f6f5">
@@ -44,7 +46,6 @@
     </button>
     <div id="nav-bottom"></div>
   </nav>
-  <main>
     <div id="main">
 
       <section id="page1">
@@ -338,7 +339,7 @@
 
       </section>
 
-      <div id="page6">
+      <section id="page6">
         <div class="test-cta">
           <div class="cta-head">
             <h1><i>when you bring us on board</i></h1>
@@ -407,7 +408,7 @@
             </div>
           </div>
           <div class="cta-btn">
-            <div class="outer-cont flex" onclick="location.href='https://github.com/clickaarambh'" target="_blank">
+            <div class="outer-cont flex" onclick="location.href='#page7'" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                 fill="#f4f6f5">
                 <path
@@ -417,15 +418,50 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <div id="page7">
+        <div class="fom">
+          <form method="post" action="" name="clickaarambh_form" id="clickaarambh_form">
+            <div class="form-head">
+              <h1>Aaiye kuch sawal jawab ho jaye...</h1>
+              <p>Just shoot us a quick message with any doubts or questions you have. We'd be thrilled to discuss your business targets and show you how our digital marketing services can help you reach them.</p>
+            </div>
+            <div class="input-sec">
+              <div class="fom-nam">
+                <input type="text" name="your-name" placeholder="Full Name" required>
+              </div>
+
+              <div class="fom-mid">
+                <div class="fom-mbox">
+                  <input type="email" name="your-email" placeholder="Email" required>
+                </div>
+                <div class="fom-nbox">
+                  <input type="text" name="your-number" placeholder="Number" required>
+                </div>
+              </div>
+
+              <textarea class="textarea" type="text" rows="10" name="message" placeholder="Message" required></textarea>
+
+              <div class="fom-smit">
+                <input type="submit" value="Submit" id="submit">
+              </div>
+
+            </div>
+
+          </form>
+        </div>
       </div>
 
+      <div id="page8"></div>
+
     </div>
-  </main>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
     integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
   <script src="script.js"></script>
 </body>
 
