@@ -69,11 +69,55 @@ function page2Animation() {
     })
 }
 
+function page2secAnimation() {
+    var page2secCenter = document.querySelector(".page2sec-center")
+    var video = document.querySelector("#page2-sec video")
+
+    page2secCenter.addEventListener("click", function () {
+        video.play()
+        gsap.to(video, {
+            transform: "scaleX(1) scaleY(1)",
+            opacity: 1,
+            borderRadius: 0
+        })
+    })
+    video.addEventListener("click", function () {
+        video.pause()
+        gsap.to(video, {
+            transform: "scaleX(0.7) scaleY(0)",
+            opacity: 0,
+            borderRadius: "35px"
+        })
+    })
+}
+
 function page2mobAnimation() {
     var page2mobCenter = document.querySelector(".page2mob-center")
     var video = document.querySelector("#page2mob video")
 
     page2mobCenter.addEventListener("click", function () {
+        video.play()
+        gsap.to(video, {
+            transform: "scaleX(1) scaleY(1)",
+            opacity: 1,
+            borderRadius: 0
+        })
+    })
+    video.addEventListener("click", function () {
+        video.pause()
+        gsap.to(video, {
+            transform: "scaleX(0.7) scaleY(0)",
+            opacity: 0,
+            borderRadius: "35px"
+        })
+    })
+}
+
+function page2secmobAnimation() {
+    var page2secmobCenter = document.querySelector(".page2secmob-center")
+    var video = document.querySelector("#page2secmob video")
+
+    page2secmobCenter.addEventListener("click", function () {
         video.play()
         gsap.to(video, {
             transform: "scaleX(1) scaleY(1)",
@@ -120,7 +164,11 @@ form.addEventListener('submit', e => {
 
 page2Animation()
 
+page2secAnimation()
+
 page2mobAnimation()
+
+page2secmobAnimation()
 
 page6Animation()
 

@@ -263,7 +263,7 @@ nav button .flex {
     z-index: 2;
 }
 
-#page2 {
+#page2, #page2-sec {
     height: 100%;
     width: 100%;
     background-color: var(--darkbg-clr);
@@ -286,14 +286,29 @@ nav button .flex {
     overflow: hidden;
 }
 
-.portfolio .page2-center {
+#page2-sec .portfolio {
+    margin-top: 8vh;
+    border-radius: 15px;
+    height: 100vh;
+    width: 86%;
+    background-image: url(landing\ page\ desk.png);
+    border: 1px solid var(--text-clr);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#page2 .portfolio .page2-center, #page2-sec .portfolio .page2sec-center {
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 1vw;
 }
 
-.portfolio .page2-center .icon {
+#page2 .portfolio .page2-center .icon, #page2-sec .portfolio .page2sec-center .icon {
     background-color: var(--text-clr);
     display: flex;
     align-items: center;
@@ -303,13 +318,13 @@ nav button .flex {
     cursor: pointer;
 }
 
-.portfolio .page2-center .icon i {
+#page2 .portfolio .page2-center .icon i, #page2-sec .portfolio .page2sec-center .icon i {
     color: var(--richblack-clr);
     font-size: 2.8vw;
     cursor: pointer;
 }
 
-.portfolio .page2-center h5 {
+#page2 .portfolio .page2-center h5, #page2-sec .portfolio .page2sec-center h5 {
     font-size: 0.8vw;
     font-weight: 700;
     padding: 12px 26px 10px 26px;
@@ -324,12 +339,12 @@ nav button .flex {
     cursor: pointer;
 }
 
-.portfolio .page2-center:hover h5 {
+#page2 .portfolio .page2-center:hover h5, #page2-sec .portfolio .page2sec-center:hover h5 {
     opacity: 1;
     transform: translateY(0%);
 }
 
-#page2 .portfolio video {
+#page2 .portfolio video, #page2-sec .portfolio video {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -340,7 +355,7 @@ nav button .flex {
     z-index: 9999;
 }
 
-#page2mob {
+#page2mob, #page2secmob {
     display: none;
 }
 
@@ -729,7 +744,7 @@ nav button .flex {
     background-color: var(--secondary-clr);
 }
 
-#page7{
+#page7 {
     margin-top: 8vh;
     height: 90vh;
     width: 100%;
@@ -737,7 +752,7 @@ nav button .flex {
     padding: 1vh 40vh;
 }
 
-.fom{
+.fom {
     height: 100%;
     width: 100%;
 }
@@ -747,12 +762,12 @@ textarea:focus {
     outline: 0;
 }
 
-.form-head{
+.form-head {
     height: 20vh;
     width: 100%;
     padding: 1vh 10vh;
 
-    h1{
+    h1 {
         font-size: 42px;
         text-transform: capitalize;
         font-weight: 600;
@@ -760,7 +775,7 @@ textarea:focus {
         margin-bottom: 1vh;
     }
 
-    p{
+    p {
         font-size: 16px;
         font-weight: 400;
         line-height: 27px;
@@ -768,7 +783,7 @@ textarea:focus {
     }
 }
 
-.input-sec{
+.input-sec {
     height: 68vh;
     width: 100%;
     padding: 1vh 10vh;
@@ -900,10 +915,117 @@ textarea:focus {
 }
 
 #page8 {
-    height: 90vh;
+    margin-top: 5vh;
+    height: 20vh;
     width: 100%;
     position: relative;
     padding: 1vh 23vh;
+    border-top: 1px solid var(--darktext-clr);
+}
+
+footer {
+    height: 100%;
+    width: 100%;
+}
+
+.footer-top {
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.fttop-left {
+    height: 100%;
+    width: 20%;
+    padding-top: 1%;
+    padding-left: 5%;
+
+    img {
+        object-fit: contain;
+        height: 60px;
+    }
+
+    img:hover {
+        height: 55px;
+        animation: ease-in-out;
+        animation-delay: 1.5s;
+    }
+}
+
+.fttop-right {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    .ft-sicon {
+        height: 100%;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        cursor: pointer;
+
+        .fa {
+            padding: 12px;
+            font-size: 26px;
+            width: 50px;
+            border-radius: 100px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            background: var(--richblack-clr);
+            color: white;
+            border: 1px solid var(--darktext-clr);
+        }
+
+        .fa:hover{
+            color: var(--primary-clr);
+            border: 1px solid var(--primary-clr);
+            font-size: 28px;
+            width: 52px;
+        }
+
+    }
+
+    .ft-info {
+        height: 100%;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+
+        a{
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 300;
+            color: var(--darktext-clr);
+        }
+
+        a:hover{
+            color: var(--text-clr);
+            font-size: 17px;
+            text-decoration: underline;
+        }
+    }
+}
+
+.footer-botm {
+    height: 8vh;
+    width: 100%;
+    padding: 2vh;
+
+    p{
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 1080px) {
@@ -999,11 +1121,11 @@ textarea:focus {
         height: 12vh;
     }
 
-    #page2 {
+    #page2, #page2-sec {
         display: none;
     }
 
-    #page2mob {
+    #page2mob, #page2secmob {
         height: 100%;
         width: 100%;
         background-color: var(--darkbg-clr);
@@ -1014,6 +1136,8 @@ textarea:focus {
     }
 
     #page2mob .portfolio {
+        margin-left: 1px;
+        margin-right: 1px;
         border-radius: 7px;
         height: 100vh;
         width: 100%;
@@ -1026,8 +1150,25 @@ textarea:focus {
         justify-content: center;
         overflow: hidden;
     }
+    #page2secmob .portfolio {
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-top: 10vh;
+        border-radius: 7px;
+        height: 100vh;
+        width: 100%;
+        background-image: url(landing\ page\ mob.png);
+        border: 1px solid var(--text-clr);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
 
-    #page2mob .portfolio .page2mob-center .icon {
+    #page2mob .portfolio .page2mob-center .icon, #page2secmob .portfolio .page2secmob-center .icon {
         background-color: var(--text-clr);
         display: flex;
         align-items: center;
@@ -1039,13 +1180,13 @@ textarea:focus {
         opacity: 0.9;
     }
 
-    #page2mob .portfolio .page2mob-center .icon i {
+    #page2mob .portfolio .page2mob-center .icon i, #page2secmob .portfolio .page2secmob-center .icon i {
         color: var(--richblack-clr);
         font-size: 45px;
         cursor: pointer;
     }
 
-    #page2mob .portfolio .page2mob-center h5 {
+    #page2mob .portfolio .page2mob-center h5, #page2secmob .portfolio .page2secmob-center h5 {
         font-size: 3vw;
         font-weight: 700;
         padding: 8px 12px 8px 12px;
@@ -1060,7 +1201,7 @@ textarea:focus {
         cursor: pointer;
     }
 
-    #page2mob .portfolio video {
+    #page2mob .portfolio video, #page2secmob .portfolio video {
         height: 100%;
         width: 100%;
         position: absolute;
@@ -1315,39 +1456,39 @@ textarea:focus {
 
     }
 
-    #page7{
+    #page7 {
         height: 100vh;
         width: 100%;
         padding: 2vh 1vh;
         margin-top: 5vh;
     }
 
-    .form-head{
+    .form-head {
         height: 24vh;
         width: 100%;
         padding: 1vh 2vh;
 
-        h1{
+        h1 {
             font-size: 32px;
             text-transform: capitalize;
             font-weight: 600;
             margin-bottom: 0.5vh;
         }
-    
-        p{
+
+        p {
             font-size: 16px;
             font-weight: 400;
             line-height: 21px;
         }
     }
 
-    .input-sec{
+    .input-sec {
         height: 72vh;
         width: 100%;
         padding: 1vh 2vh;
     }
 
-    .input-sec .fom-nam{
+    .input-sec .fom-nam {
         margin-bottom: 0vh;
     }
 
@@ -1377,6 +1518,62 @@ textarea:focus {
 
     .input-sec .fom-smit {
         margin-top: 0vh;
+    }
+
+    #page8 {
+        margin-top: 5vh;
+        height: 35vh;
+        width: 100%;
+        position: relative;
+        padding: 1vh 1vh;
+        border-top: 1px solid var(--darktext-clr);
+    }
+
+    .footer-top {
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fttop-left {
+        height: 50%;
+        width: 100%;
+        padding-top: 2%;
+        padding-left: 25%;
+
+        img {
+            object-fit: contain;
+            height: 90px;
+        }
+
+        img:hover {
+            height: 85px;
+            animation: ease-in-out;
+            animation-delay: 1.5s;
+        }
+    }
+
+    .fttop-right {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .ft-sicon {
+            height: 65%;
+            width: 100%;
+        }
+
+        .ft-info {
+            height: 35%;
+            width: 100%;
+        }
+    }
+
+    .footer-botm {
+        height: 10vh;
+        width: 100%;
     }
 
 }
